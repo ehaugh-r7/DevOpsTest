@@ -9,7 +9,7 @@ provider "aws" {
 }
 
 resource "aws_docdb_cluster_instance" "test_docdb_instance" {
-  count              = 2
+  count              = 3
   cluster_identifier = aws_docdb_cluster.test_docdb_cluster.id
   instance_class     = "db.r5.large"
 }

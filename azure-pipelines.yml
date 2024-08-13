@@ -1,7 +1,7 @@
-trigger: 
+pr:
   branches:
-    include: 
-    - releases/*
+    include:
+    - 'feature/*'
 
 pool:
   vmImage: "ubuntu-latest" # Define the virtual machine image to use for the pipeline
